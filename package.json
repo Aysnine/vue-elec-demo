@@ -49,5 +49,10 @@
   },
   "gitHooks": {
     "pre-push": "yarn lint:strict --cache && yarn test:unit --onlyChanged"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
