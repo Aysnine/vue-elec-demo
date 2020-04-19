@@ -1,5 +1,7 @@
 # vue-elec-demo
 
+caijie
+
 ## Project setup
 ```
 yarn install
