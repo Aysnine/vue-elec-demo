@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.0.0...v1.1.0) (2020-04-19)
+
+
+### Features
+
+* **demo:** add icon and start-elements ([bde486c](https://github.com/Aysnine/vue-elec-demo/commit/bde486c1b31a5fa44f90704e59bcf9fa3c22117a))
+
 # 1.0.0 (2020-04-13)
 
 
