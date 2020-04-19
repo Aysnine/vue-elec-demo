@@ -1,0 +1,50 @@
+.wrapper {
+  user-select: none;
+  overflow-x: hidden;
+}
+.inner {
+  cursor: pointer;
+  &:hover {
+    background: #eee;
+  }
+}
+// .children {
+//   // ...
+// }
+.indent {
+  display: inline-block;
+  width: 10px;
+  min-width: 10px;
+  align-self: stretch;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.nameItem {
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  width: 20px;
+  min-width: 20px;
+  overflow: hidden;
+  text-align: center;
+  * {
+    vertical-align: middle;
+  }
+}
+.icon {
+  width: 20px;
+  min-width: 20px;
+  margin-right: 2px;
+  overflow: hidden;
+  * {
+    vertical-align: middle;
+  }
+}
+.name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
