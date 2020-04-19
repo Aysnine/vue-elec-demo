@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/Aysnine/vue-elec-demo/compare/v1.1.0...v1.1.1) (2020-04-19)
+
+
+### Bug Fixes
+
+* **用户登录:** 密码错误无法继续登陆 ([4041590](https://github.com/Aysnine/vue-elec-demo/commit/40415907091d0dafdd4117ec3793b0261b36b021))
+
+
+### Documentation
+
+* **readme:** 添加名字 ([c206706](https://github.com/Aysnine/vue-elec-demo/commit/c2067068fdae394977d9ce1b42d36cd8e36232e6))
+
 # [1.1.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.0.0...v1.1.0) (2020-04-19)
 
 
