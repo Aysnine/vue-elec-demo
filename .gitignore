@@ -1,7 +1,11 @@
 shanshan
 我是姗姗
+<<<<<<< HEAD
 caijie11
 
+=======
+yaya
+>>>>>>> add content
 .DS_Store
 node_modules
 /dist
