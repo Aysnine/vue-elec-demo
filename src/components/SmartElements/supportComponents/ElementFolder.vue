@@ -3,8 +3,8 @@
     <div
       :class="$style.inner"
       @click="itemClick"
+      @dragstart="itemDragStart"
       draggable
-      @dragstart="itemDrag"
     >
       <NameItem
         :name="meta.name"
@@ -42,11 +42,11 @@ export default {
     },
   },
   methods: {
-    itemClick() {
-      this.$emit('itemClick')
+    itemClick(event) {
+      this.$emit('itemClick', { event, meta: this.meta })
     },
-    itemDrag(event) {
-      this.$emit('itemDrag', { event, meta: this.meta })
+    itemDragStart(event) {
+      this.$emit('itemDragStart', { event, meta: this.meta })
     },
   },
   components: {

@@ -6,8 +6,9 @@
     :level="level"
     :collapse="collapse"
     :pending="pending"
-    @itemClick="itemClick"
-    @itemDrag="itemDrag"
+    @itemClick="itemSelfClick"
+    @itemDragStart="itemDragStart"
+    :data-item-id="meta.id"
   >
     <template #children>
       <div v-if="children" :class="$style.children" v-show="!collapse">
@@ -16,7 +17,8 @@
           :key="item.id"
           :meta="item"
           :level="level + 1"
-          :dragGhost="dragGhost"
+          @itemClick="itemClick"
+          @itemDragStart="itemDragStart"
         />
       </div>
     </template>
@@ -26,7 +28,6 @@
 <script>
 import ElementFile from './supportComponents/ElementFile'
 import ElementFolder from './supportComponents/ElementFolder'
-import ElementUnknown from './supportComponents/ElementUnknown'
 import { dataSort } from './utils'
 
 export default {
@@ -40,9 +41,6 @@ export default {
       type: Number,
       default: 0,
     },
-    dragGhost: {
-      type: HTMLDivElement,
-    },
   },
   data() {
     return {
@@ -53,13 +51,7 @@ export default {
   },
   computed: {
     componentId() {
-      return (
-        {
-          'FILE': 'ElementFile',
-          'FOLDER': 'ElementFolder',
-          'UNKNOWN': 'ElementUnknown',
-        }[this.meta.type || 'UNKNOWN'] || 'ElementUnknown'
-      )
+      return this.meta.children ? 'ElementFolder' : 'ElementFile'
     },
     children() {
       const children =
@@ -89,20 +81,22 @@ export default {
     },
   },
   methods: {
-    itemClick() {
+    itemSelfClick(data) {
       if (this.meta.children) {
         this.collapse = !this.collapse
       }
+      this.itemClick(data)
     },
-    itemDrag({ event, meta }) {
-      this.dragGhost.innerText = meta.name
-      event.dataTransfer.setDragImage('123', 0, 0)
+    itemClick(data) {
+      this.$emit('itemClick', data)
+    },
+    itemDragStart(data) {
+      this.$emit('itemDragStart', data)
     },
   },
   components: {
     ElementFile,
     ElementFolder,
-    ElementUnknown,
   },
 }
 </script>

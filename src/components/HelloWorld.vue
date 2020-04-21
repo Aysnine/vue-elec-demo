@@ -7,20 +7,19 @@
 <script>
 import SmartElements from './SmartElements'
 
+let id = 0
 const it = (level = 1) => {
   return [
     {
-      id: '0',
+      id: id++,
       name: '普通文件测试文件0 hello',
-      type: 'FOLDER',
       children: level > 20 ? [] : it(level + 1),
     },
     {
-      id: '1',
+      id: id++,
       name: '普通文件测试文件1',
-      type: 'FOLDER',
       children:
-        level > 2
+        level > 5
           ? []
           : () => {
               return new Promise((resolve) => {
@@ -31,14 +30,22 @@ const it = (level = 1) => {
             },
     },
     {
-      id: '2',
+      id: id++,
       name: '普通文件测试文件2',
-      type: 'FILE',
+      children:
+        level > 5
+          ? []
+          : () => {
+              return new Promise((resolve) => {
+                setTimeout(() => {
+                  resolve(it(level + 1))
+                }, 1000)
+              })
+            },
     },
     {
-      id: '3',
+      id: id++,
       name: '普通文件测试文件3',
-      type: 'X',
     },
   ]
 }
