@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Aysnine/vue-elec-demo/compare/v1.1.1...v1.1.2) (2020-04-21)
+
+
+### Bug Fixes
+
+* wording ([dddd24b](https://github.com/Aysnine/vue-elec-demo/commit/dddd24b29923775ad673c4e895e496ff15e19384))
+* wording ([6ba8e5d](https://github.com/Aysnine/vue-elec-demo/commit/6ba8e5d8ea0e4ce858e8afabc6965ef4a6368881))
+* 修改了文档 ([03bd401](https://github.com/Aysnine/vue-elec-demo/commit/03bd401d5a6ee717534c26ffaf87f7c4c5cabdae))
+* 添加了caijie ([9493a36](https://github.com/Aysnine/vue-elec-demo/commit/9493a36e0826b3c9c59936da92492472edd3c1f4))
+* 添加了caijie ([f695249](https://github.com/Aysnine/vue-elec-demo/commit/f6952497a8418e36a4915d35040bdaec3c197f81))
+* 添加了caijie ([7760fe7](https://github.com/Aysnine/vue-elec-demo/commit/7760fe7b2dd26042f1ed4b32c943ed2f75477a13))
+
+
+### Code Refactoring
+
+* better demo ([a8bfc71](https://github.com/Aysnine/vue-elec-demo/commit/a8bfc7174c5c16784246c8a2380200abff7923b3))
+
+
+### Documentation
+
+* add +1 ([9d664ea](https://github.com/Aysnine/vue-elec-demo/commit/9d664ea44ad1257f9add7bf06491563e50b1ee1c))
+* add +1 ([f1574f4](https://github.com/Aysnine/vue-elec-demo/commit/f1574f49b1fbddb34680175de750a4f55da3b7e5))
+* add +1 ([4dc2580](https://github.com/Aysnine/vue-elec-demo/commit/4dc258068a9b415d1c82b20b9430539f7d893d5c))
+* **.git..:** change file ([819517f](https://github.com/Aysnine/vue-elec-demo/commit/819517fdc53ac00090c1cd3ee08b694a3ffa6067))
+
+
+### Miscellaneous
+
+* a ([325682f](https://github.com/Aysnine/vue-elec-demo/commit/325682f31c079c4377fcd40d3af49089f4821779))
+* fix:12345 ([7cbc12f](https://github.com/Aysnine/vue-elec-demo/commit/7cbc12f6312f44aab89f39c1e91921a1708d19fe))
+* fix:date ([f05ff47](https://github.com/Aysnine/vue-elec-demo/commit/f05ff479c0a31b922a1fccd4bdba45f783fd2102))
+* fix:2333 ([66d5e09](https://github.com/Aysnine/vue-elec-demo/commit/66d5e094c39ec49061c6d55dd52dce7083a42d3a))
+* fix:来啦5 ([a31de3c](https://github.com/Aysnine/vue-elec-demo/commit/a31de3cc96d303f5aff8d46fb59b7b14b05ae839))
+* flx:来啦4 ([552ea66](https://github.com/Aysnine/vue-elec-demo/commit/552ea66366c000e2d353194e95cca1873da25355))
+* fix:来啦3 ([cb979b1](https://github.com/Aysnine/vue-elec-demo/commit/cb979b1ac1af11811fc3e94e2432dc641f01d8db))
+* fix:来啦2 ([ea7110e](https://github.com/Aysnine/vue-elec-demo/commit/ea7110e2c77b2f55b6504619bd3e24adff5444df))
+* fix:来啦1 ([7e84397](https://github.com/Aysnine/vue-elec-demo/commit/7e843972b1fa7909eaae4ee3301108e65ed9ded6))
+* fix:添加了XY ([eb8632f](https://github.com/Aysnine/vue-elec-demo/commit/eb8632f9adfc49bd05d816357f341bd40adbf785))
+* add content ([4b16c30](https://github.com/Aysnine/vue-elec-demo/commit/4b16c303c5f56096c93053444336d5bec3cf4468))
+
 ## [1.1.1](https://github.com/Aysnine/vue-elec-demo/compare/v1.1.0...v1.1.1) (2020-04-19)
 
 
