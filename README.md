@@ -1,6 +1,6 @@
 # vue-elec-demo
 
-caijie1
+
 
 ## Project setup
 ```
