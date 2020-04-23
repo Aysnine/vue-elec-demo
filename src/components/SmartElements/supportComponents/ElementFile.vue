@@ -8,7 +8,7 @@
     >
       <NameItem :name="meta.name" :level="level">
         <template #icon>
-          <v-icon name="regular/file"></v-icon>
+          <v-icon name="regular/file" color="#90a4ae"></v-icon>
         </template>
       </NameItem>
     </div>

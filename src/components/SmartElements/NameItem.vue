@@ -5,10 +5,11 @@
       <v-icon
         v-if="arrow !== undefined"
         :name="arrow ? 'caret-right' : 'caret-down'"
+        color="#bbb"
       ></v-icon>
     </span>
     <span v-if="pending" :class="$style.icon">
-      <v-icon name="spinner" pulse></v-icon>
+      <v-icon name="spinner" pulse color="#bbb"></v-icon>
     </span>
     <span v-else :class="$style.icon">
       <slot name="icon" />
