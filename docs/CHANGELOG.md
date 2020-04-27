@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.2.0...v1.3.0) (2020-04-27)
+
+
+### Features
+
+* 测试ci ([a305486](https://github.com/Aysnine/vue-elec-demo/commit/a305486662ac678612b3f46d1c55d71081da489b))
+
 # [1.2.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.1.2...v1.2.0) (2020-04-27)
 
 
