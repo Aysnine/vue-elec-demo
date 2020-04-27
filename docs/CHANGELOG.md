@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.1.2...v1.2.0) (2020-04-27)
+
+
+### Features
+
+* colorful icon ([c00e209](https://github.com/Aysnine/vue-elec-demo/commit/c00e20902a27f92accea63ae9097591047cb074c))
+* 合并 ([b6e69cd](https://github.com/Aysnine/vue-elec-demo/commit/b6e69cd8cb617422fad2b8b8acb57330169ce194))
+* 打包测试 ([8d42464](https://github.com/Aysnine/vue-elec-demo/commit/8d424649fd67a4aa40f6dd344912eaa964aefd5f))
+
 ## [1.1.2](https://github.com/Aysnine/vue-elec-demo/compare/v1.1.1...v1.1.2) (2020-04-21)
 
 
