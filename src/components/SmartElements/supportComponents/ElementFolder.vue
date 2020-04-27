@@ -13,7 +13,10 @@
         :pending="pending"
       >
         <template #icon>
-          <v-icon :name="collapse ? 'folder' : 'folder-open'"></v-icon>
+          <v-icon
+            :name="collapse ? 'folder' : 'folder-open'"
+            color="#90a4ae"
+          ></v-icon>
         </template>
       </NameItem>
     </div>
