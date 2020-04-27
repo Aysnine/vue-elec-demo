@@ -59,6 +59,7 @@
     "not dead"
   ],
   "resolutions": {
+    "vue-cli-plugin-electron-builder/electron-builder": ">=22.0.0",
     "vue-cli-plugin-electron-builder/spectron/webdriverio/optimist/minimist": ">=0.2.1 <1.0.0 || >=1.2.3"
   }
 }
