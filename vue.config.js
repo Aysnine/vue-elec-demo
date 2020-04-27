@@ -4,7 +4,7 @@ module.exports = {
     electronBuilder: {
       builderOptions: {
         // extends: null,
-        files: ['dist_electron/**/*'],
+        // files: ['dist_electron/**/*'],
       },
     },
   },
