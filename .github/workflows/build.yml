@@ -1,8 +1,13 @@
-name: Build and upload installation packages
+name: Build packages
+
+# on:
+#   release:
+#     types: [published]
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
