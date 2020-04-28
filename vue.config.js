@@ -3,8 +3,7 @@ module.exports = {
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
-        // extends: null,
-        // files: ['dist_electron/**/*'],
+        publish: ['github'],
       },
     },
   },
