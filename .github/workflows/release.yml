@@ -39,8 +39,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
-          name: dist
-          path: dist_electron/*.*
+          name: dist_electron
+          path: dist_electron
 
   cat:
     needs: build
@@ -49,9 +49,9 @@ jobs:
       - name: Cat build result
         uses: actions/download-artifact@v1
         with:
-          name: dist
+          name: dist_electron
       - name: ls
-        run: ls -al dist
+        run: ls -al dist_electron
 
   # publish:
   #   if: "! contains(github.event.head_commit.message, '[skip ci]')"
