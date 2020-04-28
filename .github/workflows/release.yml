@@ -21,7 +21,7 @@ jobs:
 
   build:
     needs: check
-    name: Multi-platform build
+    name: Build
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
