@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.3.0...v1.4.0) (2020-04-28)
+
+
+### Features
+
+* actions/upload-artifact@v2-preview ([b332eaf](https://github.com/Aysnine/vue-elec-demo/commit/b332eaf52b28593ca7133beb4486858951fb8880))
+* maybe? ([b565db2](https://github.com/Aysnine/vue-elec-demo/commit/b565db28aa69b48dd0e27da51dd0db3a494a3dca))
+* wowowo ([171851c](https://github.com/Aysnine/vue-elec-demo/commit/171851cc04fa736c1585de60bf86a228e03e909c))
+* 修复 actions ([2346a20](https://github.com/Aysnine/vue-elec-demo/commit/2346a20c9eabaca63ce6c178d0805911fb9547d7))
+* 修改哦配置 ([7e40c8c](https://github.com/Aysnine/vue-elec-demo/commit/7e40c8c6386cb2b1cb590e1253f8ab5eb3a0b8b0))
+* 拉通配置 ([79f4996](https://github.com/Aysnine/vue-elec-demo/commit/79f49962e4cba42989bf6b0afd7d99a098d6b9fb))
+* 测试 artifact ([c68e612](https://github.com/Aysnine/vue-elec-demo/commit/c68e612147cd139fa42d80e513bb414118fa9eaa))
+* 测试 ci ([e03631d](https://github.com/Aysnine/vue-elec-demo/commit/e03631d0fceece7ad21ce88e92272611cba75ca3))
+* 测试 ci ([276b942](https://github.com/Aysnine/vue-elec-demo/commit/276b942676f989084c8d9bc9007165328426117e))
+* 测试 ci ([5083dcc](https://github.com/Aysnine/vue-elec-demo/commit/5083dcc6ee9c96374fdac900c28e4e3c5a1a28a3))
+* 测试 ci ([c9f891d](https://github.com/Aysnine/vue-elec-demo/commit/c9f891d2eab2571d32749a91f55e766b07e7e713))
+* 测试 ci ([fb5c988](https://github.com/Aysnine/vue-elec-demo/commit/fb5c9886ef9372ec8ba661b90b923180e73f094c))
+* 测试 ci 同学 ([22f303b](https://github.com/Aysnine/vue-elec-demo/commit/22f303b377c002c5b790b7b0ca71df93359f4427))
+* 测试ci ([c5cf06c](https://github.com/Aysnine/vue-elec-demo/commit/c5cf06cb56c0850db9a2d73ac0be1d03a8f05373))
+* 测试ci ([2b04195](https://github.com/Aysnine/vue-elec-demo/commit/2b041957de14ce5b42d3a37cef6c72f48d3f08e6))
+* 测试ci ([0600f04](https://github.com/Aysnine/vue-elec-demo/commit/0600f04aec1a16fcd02743e8b237da70d3f60795))
+* 测试ci ([1c9b65c](https://github.com/Aysnine/vue-elec-demo/commit/1c9b65c69b826f9e479d572369ce63fc6c241ea6))
+* 测试tmd ci ([d0e59f9](https://github.com/Aysnine/vue-elec-demo/commit/d0e59f96870b7ac77edcfd3f27b4e8cb0613de77))
+* 测试啊测试 ([0df1aad](https://github.com/Aysnine/vue-elec-demo/commit/0df1aad7575c24acaffd9b010c32a73b7ea3f47c))
+* 确认 ([125dd57](https://github.com/Aysnine/vue-elec-demo/commit/125dd57e8c2ab993da643c8f9d24559cb74a3478))
+* 禁用 electron-builder 的发布 ([4bf01d3](https://github.com/Aysnine/vue-elec-demo/commit/4bf01d3c1109c424b40fd739c3c343b4c0fc5259))
+* 移除 electron builder 的 publish ([e295d9e](https://github.com/Aysnine/vue-elec-demo/commit/e295d9e505c223f44fbf8cbc0997433b97144ae4))
+* 细舅父 ([615c80e](https://github.com/Aysnine/vue-elec-demo/commit/615c80e57b70ad970b3dfd5de411a5c1fc1e11d2))
+* 集成 ([f0fec30](https://github.com/Aysnine/vue-elec-demo/commit/f0fec30b910c1392fcb876b0edcb6b339cd986d8))
+
 # [1.3.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.2.0...v1.3.0) (2020-04-27)
 
 
