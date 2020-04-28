@@ -64,7 +64,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - uses: bahmutov/npm-install@v1
+      # - uses: bahmutov/npm-install@v1
+
+      - name: Download artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: dist_electron
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
