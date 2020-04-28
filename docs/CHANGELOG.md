@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/Aysnine/vue-elec-demo/compare/v1.5.0...v1.5.1) (2020-04-28)
+
+
+### Bug Fixes
+
+* **vue-router:** 使用 hash 模式 ([b707a95](https://github.com/Aysnine/vue-elec-demo/commit/b707a95d3ff90af3b0780fe4ee6994fde3e17eb1))
+
 # [1.5.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.4.0...v1.5.0) (2020-04-28)
 
 
