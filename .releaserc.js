@@ -91,7 +91,7 @@ module.exports = {
       },
     ],
     ['@semantic-release/npm', { npmPublish: false }],
-    '@semantic-release/github',
+    ['@semantic-release/github', { assets: ['dist_electron/*.*'] }],
     [
       '@semantic-release/git',
       { assets: ['docs/CHANGELOG.md', 'package.json'] },
