@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.11.0...v1.12.0) (2020-04-29)
+
+
+### Features
+
+* asda ([7dcdf82](https://github.com/Aysnine/vue-elec-demo/commit/7dcdf822bfb40ba6310b2a5da0c924ff2388a41e))
+* sasdas ([d7df9ae](https://github.com/Aysnine/vue-elec-demo/commit/d7df9ae38beb19fae7cc1776ac1cf5c4d03e7c2b))
+* xwowow ([8ad2dda](https://github.com/Aysnine/vue-elec-demo/commit/8ad2dda2f96760e514b9e4764e9c46b18ad1b242))
+* xxx ([f832f00](https://github.com/Aysnine/vue-elec-demo/commit/f832f008c12ac24bc45f2da91d77a94af4c73472))
+* xxx ([389844d](https://github.com/Aysnine/vue-elec-demo/commit/389844d9c6947670c68398fca6b10ab33890795c))
+* **xxx:** xxx ([64be927](https://github.com/Aysnine/vue-elec-demo/commit/64be9275da8bf122a4404178258e1b4f1e365962))
+* xxx ([46be714](https://github.com/Aysnine/vue-elec-demo/commit/46be714a0c03209607aaad8184226a1952ff621b))
+* xxx ([b45bf3c](https://github.com/Aysnine/vue-elec-demo/commit/b45bf3c5d79310e1440ddd35bd64ed2eb7ae2584))
+* xxx ([a389720](https://github.com/Aysnine/vue-elec-demo/commit/a3897208735362de11e6aad0ea948c2fd8b595d5))
+* xxx ([f620df6](https://github.com/Aysnine/vue-elec-demo/commit/f620df6b6d8a8785797248684247af5a5ad5e81a))
+* xxx ([7112c83](https://github.com/Aysnine/vue-elec-demo/commit/7112c832d6abff83e8ffd41b1b25b97a3c8bda25))
+* xxx ([bf78a23](https://github.com/Aysnine/vue-elec-demo/commit/bf78a23068752f583e208b80d45a7c7904880010))
+* xxx ([7bc0aac](https://github.com/Aysnine/vue-elec-demo/commit/7bc0aacc6aa84149259b6c571b1a9614d7941c27))
+* xxx ([ffc082a](https://github.com/Aysnine/vue-elec-demo/commit/ffc082a7fc9c9711637aba178527b8cefec6a53d))
+* xxxxx ([195aace](https://github.com/Aysnine/vue-elec-demo/commit/195aacedaf627ffa13224465d6313cfcd49bfd57))
+
 # [1.11.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.10.0...v1.11.0) (2020-04-29)
 
 
