@@ -10,7 +10,7 @@ jobs:
     name: Code quality check
     runs-on: ubuntu-latest
     outputs:
-      semantic: ${{ toJSON(steps.semantic.outputs) }}
+      semantic: ${{ toJSON(steps.semantic.outputs) }} # ! MUST BE STRING
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -38,34 +38,24 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Debug release info
-        run: |
-          echo ${{ steps.semantic.outputs.new_release_published }}
-          echo ${{ steps.semantic.outputs.new_release_version }}
-
   build:
     needs: check
     name: Build
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # os: [macos-latest, ubuntu-latest, windows-latest]
-        os: [ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      # - uses: bahmutov/npm-install@v1
+      - uses: bahmutov/npm-install@v1
 
-      - name: Debug release info
+      - name: Tricky version
+        if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
         run: |
-          echo ${{ toJSON(needs.check) }}
-
-      # - name: Tricky version
-      #   # if: needs.check.steps.semantic.outputs.new_release_published == 'true'
-      #   run: |
-      #     npx npe version ${{ needs.check.steps.semantic.outputs.new_release_version }}
+          npx npe version ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
 
       - name: Build
         run: yarn build -p never
@@ -88,29 +78,29 @@ jobs:
       - name: List dist folder
         run: ls -al dist_electron
 
-  # publish:
-  #   if: "! contains(github.event.head_commit.message, '[skip ci]')"
-  #   needs: build
-  #   name: Semantic release
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-node@v1
-  #       with:
-  #         node-version: '12.x'
-  #     # - uses: bahmutov/npm-install@v1
+  publish:
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    needs: build
+    name: Semantic release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      # - uses: bahmutov/npm-install@v1
 
-  #     - name: Download artifact
-  #       uses: actions/download-artifact@v1
-  #       with:
-  #         name: dist_electron
+      - name: Download artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: dist_electron
 
-  #     - name: Semantic Release
-  #       uses: cycjimmy/semantic-release-action@v2
-  #       with:
-  #         extra_plugins: |
-  #           @semantic-release/changelog@3.0.6
-  #           @semantic-release/git@7.0.18
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            @semantic-release/changelog@3.0.6
+            @semantic-release/git@7.0.18
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
