@@ -9,6 +9,8 @@ jobs:
   check:
     name: Code quality check
     runs-on: ubuntu-latest
+    outputs:
+      semantic: ${{ steps.semantic.outputs }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -58,13 +60,12 @@ jobs:
 
       - name: Debug release info
         run: |
-          echo ${{ needs.check.steps.semantic.outputs.new_release_published }} >> v.txt
-          echo ${{ needs.check.steps.semantic.outputs.new_release_version }} >> v.txt
-      - name: Tricky version
-        # if: needs.check.steps.semantic.outputs.new_release_published == 'true'
-        run: |
-          npx npe version ${{ needs.check.steps.semantic.outputs.new_release_version }}
-
+          echo ${{ needs.check.outputs.semantic.new_release_published }} >> v.txt
+          echo ${{ needs.check.outputs.semantic.new_release_version }} >> v.txt
+      # - name: Tricky version
+      #   # if: needs.check.steps.semantic.outputs.new_release_published == 'true'
+      #   run: |
+      #     npx npe version ${{ needs.check.steps.semantic.outputs.new_release_version }}
 
       - name: Build
         run: yarn build -p never
