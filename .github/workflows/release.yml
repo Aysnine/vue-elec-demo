@@ -10,7 +10,7 @@ jobs:
     name: Code quality check
     runs-on: ubuntu-latest
     outputs:
-      semantic: ${{ steps.outputs }}
+      semantic: ${{ steps.semantic.outputs }}
       output1: ${{ steps.step1.outputs.test }}
     steps:
       - id: step1
@@ -28,10 +28,10 @@ jobs:
       #   run: |
       #     echo "IS_TEST=true" >> .env.local
       #     yarn test:unit
-
-      - name: Semantic Release with dryRun
+      
+      - id: semantic
+        name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
-        id: semantic
         with:
           dry_run: true
           extra_plugins: |
