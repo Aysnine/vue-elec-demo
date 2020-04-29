@@ -10,7 +10,7 @@ jobs:
     name: Code quality check
     runs-on: ubuntu-latest
     outputs:
-      semantic: ${{ steps.outputs.semantic.outputs }}
+      semantic: ${{ steps }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
