@@ -10,7 +10,7 @@ jobs:
     name: Code quality check
     runs-on: ubuntu-latest
     outputs:
-      release: ${{ steps.release.outputs }}
+      release: ${{ steps.outputs.release }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
