@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.6.0...v1.7.0) (2020-04-29)
+
+
+### Features
+
+* 新版本 ([15bcb3f](https://github.com/Aysnine/vue-elec-demo/commit/15bcb3fac011ed6424d41c3a8b608cdeb443fa73))
+* 测试 ([e59291b](https://github.com/Aysnine/vue-elec-demo/commit/e59291bd1bdb8c54d56b5b33b4a0a2f5a1dd03df))
+* 测试 ([00f032d](https://github.com/Aysnine/vue-elec-demo/commit/00f032d92f2be148392ad9e440c7db8f75ce81de))
+
 # [1.6.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.5.1...v1.6.0) (2020-04-29)
 
 
