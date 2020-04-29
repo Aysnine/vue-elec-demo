@@ -9,8 +9,6 @@ jobs:
   check:
     name: Code quality check
     runs-on: ubuntu-latest
-    outputs:
-      release: ${{ steps.release.outputs }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -28,7 +26,7 @@ jobs:
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
-        id: release
+        id: semantic
         with:
           # dry_run: true
           extra_plugins: |
@@ -53,10 +51,10 @@ jobs:
       - uses: bahmutov/npm-install@v1
 
       - name: Debug release info
-        run: echo ${{ needs.check.outputs.release }}
+        run: echo ${{ needs.check.steps.semantic.outputs.new_release_version }}
       - name: Tricky version
-        if: needs.check.outputs.release.new_release_published == 'true'
-        run: npx npe version ${{ needs.check.outputs.release.new_release_version }}
+        if: needs.check.steps.semantic.outputs.new_release_published == 'true'
+        run: npx npe version ${{ needs.check.steps.semantic.outputs.new_release_version }}
 
       - name: Build
         run: yarn build -p never
