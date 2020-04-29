@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       semantic: ${{ steps.outputs }}
+      output1: ${{ steps.step1.outputs.test }}
     steps:
+      - id: step1
+        run: echo "::set-output name=test::hello"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
@@ -60,9 +63,7 @@ jobs:
 
       - name: Debug release info
         run: |
-          echo ${{ toJSON(needs) }}
           echo ${{ toJSON(needs.check) }}
-          echo ${{ toJSON(needs.check.outputs) }}
 
       # - name: Tricky version
       #   # if: needs.check.steps.semantic.outputs.new_release_published == 'true'
