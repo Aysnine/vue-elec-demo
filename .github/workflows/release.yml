@@ -60,6 +60,8 @@ jobs:
 
       - name: Debug release info
         run: |
+          echo ${{ toJSON(needs) }}
+          echo ${{ toJSON(needs.check) }}
           echo ${{ toJSON(needs.check.outputs) }}
 
       # - name: Tricky version
