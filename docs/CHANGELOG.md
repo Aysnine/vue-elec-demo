@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.10.0...v1.11.0) (2020-04-29)
+
+
+### Features
+
+* debug ([d6aa60b](https://github.com/Aysnine/vue-elec-demo/commit/d6aa60bd3066fd918b221571be3d24e33f489381))
+
 # [1.10.0](https://github.com/Aysnine/vue-elec-demo/compare/v1.9.0...v1.10.0) (2020-04-29)
 
 
